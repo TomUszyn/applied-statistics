@@ -2,8 +2,8 @@
 
 
 
-<img src="img/transparent.png"  width="900" 
-height="270" img align='center'>
+<img src="img/white.png"  width="650" 
+height="356" img align='center'>
 
 ## Table of Contents
 
