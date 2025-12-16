@@ -116,7 +116,7 @@ Dependencies are essential for ensuring the proper functioning of this repositor
    git clone https://github.com/TomUszyn/applied-statistics.git
    ```
 
-5. Install Dependencies:
+6. Install Dependencies:
    ```bash
    pip install -r requirements.txt
    ```
@@ -149,7 +149,7 @@ VS Code open:
 
    Once you select the correct environment, the kernel should switch to that environment, and you'll be ready to run the notebook.
 
-* Click on weather.ipynb to open it. VS Code will automatically detect that it's a Jupyter notebook and will open it in the notebook interface.
+* Click on problems.ipynb to open it. VS Code will automatically detect that it's a Jupyter notebook and will open it in the notebook interface.
 
 * To execute the notebook:
 
