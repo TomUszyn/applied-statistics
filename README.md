@@ -21,6 +21,8 @@ height="356" img align='center'>
 
 This repository contains the Applied Statistics assessment, exploring simulation, hypothesis testing, and analysis of variance. It highlights probability estimation, variability in samples, error rates in t-tests, and the advantages of ANOVA for comparisons across multiple groups.
 
+[🔝 Back to Top](#table-of-contents)
+
 ---
 
 ## Repository Contents
@@ -32,6 +34,8 @@ This repository includes the following:
 - `README.md`: A file provides an overview of the project, its purpose, and instructions for setup and usage.
 - `requirements.txt`: Dependencies needed to run the Jupyter Notebook.
 - `problems.ipynb`: A Jupyter Notebook serving as both a report on key realizations and a tool for data analysis.
+
+[🔝 Back to Top](#table-of-contents)
 
 ---
 
@@ -69,13 +73,15 @@ Generate three independent samples, each of size 30, from normal distributions w
 
 Write a short note on why ANOVA is preferred over running several t-tests.
 
+[🔝 Back to Top](#table-of-contents)
+
 ---
 
 ## Setting Up Your Environment
 
 ### Prerequisites
 
-- Python 3.8+
+- Python 3.13.5
 - Anaconda
 - Bash shell
 - Git
@@ -95,70 +101,99 @@ Dependencies are essential for ensuring the proper functioning of this repositor
 
 <img src="img/advanced_option.png"  width="300" height="200" img align='center'>
 
-2. Install Git:
-    - Download Git for your operating system from the official Git website: https://git-scm.com/downloads
-    - Follow the installation instructions provided on the website.
-
-3. Configure Git:
-    - Open a terminal or Git Bash.
-    - Set your name and email address using the following commands:
-      ```
-      git config --global user.name "Your Name"
-      git config --global user.email "your.email@example.com"
-      ```
-
-4. Install Visual Studio Code (VS Code):
-    - Download Visual Studio Code for your operating system from the official VS Code website: https://code.visualstudio.com/download
-    - Follow the installation instructions provided on the website.
-
-5. Clone the Repository:
+2. Create a new virtual environment (recommended):  
    ```bash
+   conda create -n stats-env python=3.9
+   conda activate stats-env
+   ```
+   If you don’t use Anaconda, you can create a venv instead
+
+   ```bash
+   python -m venv venv
+   ```
+   To activate the environment:
+
+   * On Linux/Mac
+
+     ```source
+     venv/bin/activate
+     ```
+
+   * On Windows
+
+     ```bash
+     venv\Scripts\activate
+     ``` 
+
+3. Install Git:  
+   Download from https://git-scm.com/downloads and follow instructions.  
+
+4. Configure Git:  
+   ```
+   git config --global user.name "Your Name"
+   git config --global user.email "your.email@example.com"
+   ```
+5. Install Visual Studio Code (VS Code):
+
+   Download from https://code.visualstudio.com/download  and follow 
+instructions.
+
+6. Clone the Repository:
+   ```
    git clone https://github.com/TomUszyn/applied-statistics.git
    ```
 
-6. Install Dependencies:
-   ```bash
+7. Install Dependencies:
+   ```
    pip install -r requirements.txt
    ```
+
+[🔝 Back to Top](#table-of-contents)
 
 ---
 
 ## Using the Repository
 
+To work with the notebooks in this project, follow these simple steps:
 
-### Exploring the Jupyter Notebook
+### **Install Jupyter (if not already installed):**
+   ```bash
+   pip install notebook
+   ```
 
-Make sure you have a Python environment with Jupyter installed. If not, you can install it by running:
-```bash
-pip install notebook
-```
+### Opening the notebook from terminal
 
-To open the notebook:
-```bash
-jupyter notebook problems.ipynb
-```
-VS Code open:
+   * From terminal:
+   ```bash
+   jupyter notebook problems.ipynb
+   ```
+### Using the Notebook in VS Code
 
-* Go to File > Open Folder, and select the cloned project directory where the weather.ipynb file is located.
+1. **Open the project folder:**
+   - Go to **File > Open Folder** and select the cloned project directory.
+   - Click on `problems.ipynb` (or the notebook you want to run).
+   - VS Code will automatically detect it as a Jupyter notebook.
 
-* Select the Anaconda Environment in VS Code:
+2. **Select the correct Python environment:**
+   - In the top‑right corner of the notebook, click the **kernel selector**.
+   - Choose the Anaconda or virtual environment you created earlier.
 
-    - In the top-right corner of the notebook interface, click on the kernel selector. This will open a list of available Python environments.
+3. **Restart the kernel (recommended before running cells):**
+   - Press **Ctrl + Shift + P** in VS Code.
+   - Type:
+     ```bash
+     Jupyter: Restart Kernel and Run All
+     ```
+   - Press **Enter** to confirm.
+   - This restarts the kernel and executes all cells from the beginning, ensuring a clean state.
 
-    - Choose the Anaconda environment that has Jupyter installed. If you created a custom environment using conda, it will appear in this list.
+4. **Run cells (if you prefer step‑by‑step execution):**
+   - Click on the first cell.
+   - Press **Shift + Enter** (keyboard shortcut) **or** click the ▶ **Run button** (play icon).
+   - Continue running cells one by one, or select **Cell > Run All** to execute everything.
 
-   Once you select the correct environment, the kernel should switch to that environment, and you'll be ready to run the notebook.
+[🔝 Back to Top](#table-of-contents)
 
-* Click on problems.ipynb to open it. VS Code will automatically detect that it's a Jupyter notebook and will open it in the notebook interface.
-
-* To execute the notebook:
-
-    * Click on the first cell of the notebook.
-    * Press Shift + Enter or click the Run button (a play icon) located on the left side of the cell to run it.
-    * Continue running the remaining cells in the notebook by clicking the Run button for each cell, or press Shift + Enter to run them sequentially.
-    * You can also select Run All from the Cell menu at the top to execute all cells at once.
-
-In VS Code, "Restart Kernel and Run All" (via Ctrl + Shift + P → Jupyter: Restart Kernel and Run All) restarts the kernel and runs all cells from the beginning, ensuring a clean state and that all dependencies are properly reloaded.   
 
 ---
 
@@ -168,21 +203,25 @@ If you have any questions, feel free to reach out.
 
 - **Email:** [tomaszuszynski3@gmail.com](mailto:tomaszuszynski3@gmail.com)
 
+[🔝 Back to Top](#table-of-contents)
+
 ---
 
 ## Author
 
 **Tomasz Uszynski**
 
-I am an Atlantic Technical University in Ireland student pursuing a Higher Diploma in Science in Computing (Data Analytics). My technical expertise includes:
+I am a student at Atlantic Technological University pursuing a Higher Diploma in Science in Computing (Data Analytics). My objective is to build robust, data-driven solutions where technical proficiency in Python and automation meet analytical problem-solving. I focus on the end-to-end data analysis lifecycle, combining technical automation with modern computational tools to extract meaningful insights from diverse datasets.
 
-- **Operating Systems:** Proficient in Windows and Linux (especially Ubuntu).
-- **Programming:** Skilled in Python for data analysis.
-- **Databases:** Familiar with MySQL.
-- **Web Technologies:** Basic knowledge of Apache.
-- **Scripting:** Experienced in Bash scripting and YAML for automation and configuration.
+### Technical & Analytical Toolkit
 
-I’m passionate about analysing datasets to derive insights and develop data-driven solutions.
+* **Data Analysis & Manipulation:** Proficient in the **Python** ecosystem, leveraging **Pandas** and **NumPy** for data cleaning, transformation, and structural analysis.
+* **Statistical & Computational Methods:** Experienced in applying hypothesis testing, simulations, and probabilistic modelling to validate data-driven conclusions.
+* **Machine Learning:** Skilled in developing predictive models using **scikit-learn**, **TensorFlow**, and **Keras**, covering both supervised and unsupervised learning workflows.
+* **Visualisation:** Strong command of **Matplotlib** and **Seaborn** for exploratory data analysis and communicating findings through clear, professional visualisations.
+* **Systems & Automation:** Knowledgeable in **Linux (Ubuntu)** and **Windows**. Experienced in **Bash** and **YAML** for automating data pipelines and ensuring environment consistency.
+* **Database Management:** Competent in using **MySQL** for data storage, retrieval, and structured querying.
 
+[🔝 Back to Top](#table-of-contents)
 
-
+---
